@@ -1,3 +1,5 @@
+'use strict';
+
 addEventListener("click", function(event) {
     if(event.target === document.querySelector("#btn")) {
         event.preventDefault();

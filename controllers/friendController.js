@@ -19,13 +19,7 @@ router.get("/api/friends", function (req, res) {
         const hbsObject = {
             makeFriends: data
         };
-        // const friending = res.json(data);
-
-        // console.log(hbsObject);
-        // console.log("\n\n", data, "\n\n");
-        // console.log("\n\n", hbsObject.makeFriends.friending, "\n\n");
-        // console.log("\n\n", hbsObject.makeFriends, "\n\n")
-        // console.log("\n\n", res.json(data), "\n\n");
+        // Atleast this guy is working
         return res.json(data);
     });
 });
@@ -37,19 +31,6 @@ router.get("/selfInput", function(req, res) {
 router.get("/matches", function(req, res) {
     res.render("./partials/matches")
 })
-
-
-
-// router.post("/api/cats", function (req, res) {
-//     friend.create([
-//         "name", "sleepy"
-//     ], [
-//         req.body.name, req.body.sleepy
-//     ], function (result) {
-//         // Send back the ID of the new quote
-//         res.json({ id: result.insertId });
-//     });
-// });
 
 
 
