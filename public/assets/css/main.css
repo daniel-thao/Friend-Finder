@@ -40,7 +40,7 @@
 
 .buttonLine {
     height: 7em;
-    width: 100%;
+    width: 12em;
     background: white;
     margin-top: 2em;
     /* position: relative; */
@@ -109,4 +109,20 @@ background: rgb(255, 173, 72);
 /* ================================= */
 h6 {
     font-size: 1.2em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+/* p {
+    text-align: center;
+} */
+
+.flex {
+    display: flex;
 }

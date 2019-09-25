@@ -1,0 +1,97 @@
+.dropbtn {
+    background-color: rgb(255, 173, 72);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3em;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: rgb(37, 62, 255);}
+
+.dropbtn:hover {
+    background: rgb(37, 62, 255)
+}
+
+.dropdown-choice {
+    padding: .2em;
+}
+
+.dropdown-choice:hover {
+    background: rgb(255, 173, 72);
+    width: 1em;
+    border-radius: 1em;
+    margin-left:1.5em;
+}
+
+
+.questions {
+    display: flex;
+}
+
+.submitBtn {
+    height: 4em;
+    width: 4em;
+}
+
+
+
+/* ===================================== */
+
+.marginXXXS {
+    margin: .8em 1em;
+}
+
+.marginXXXXS-left {
+    margin-left: 1em;
+}
+
+.marginXXXS-left {
+    margin-left: 1.3em;
+}
+
+.marginXXS-left {
+    margin-left: 2em;
+}
+
+.marginXS-left {
+    margin-left: 2.4em;
+}
+
+.options {
+
+}
+
+.options:hover {
+    cursor: pointer;
+}
+
+.extend {
+    width: 50em;
+}

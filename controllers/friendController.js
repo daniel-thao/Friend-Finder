@@ -30,6 +30,14 @@ router.get("/api/friends", function (req, res) {
     });
 });
 
+router.get("/selfInput", function(req, res) {
+    res.render("./partials/friend")
+})
+
+router.get("/matches", function(req, res) {
+    res.render("./partials/matches")
+})
+
 
 
 // router.post("/api/cats", function (req, res) {
