@@ -6,16 +6,27 @@ const friend = require("../models/friend.js");
 
 
 
-// Create all our routes and set up logic within those routes where required.
-router.get("/", function (req, res) {
+// Homepage layout
+router.get("/", function(req, res) {
+    res.render("./partials/homepage");
+})
+
+
+
+// THIS creates the page that displays the json version of all the friends in the table
+router.get("/api/friends", function (req, res) {
     friend.all(function (data) {
-        var hbsObject = {
+        const hbsObject = {
             makeFriends: data
         };
+        // const friending = res.json(data);
+
         // console.log(hbsObject);
-        console.log(data.name);
-        console.log("\n\n", hbsObject.makeFriends, "\n\n")
-        res.render("index", hbsObject);
+        // console.log("\n\n", data, "\n\n");
+        // console.log("\n\n", hbsObject.makeFriends.friending, "\n\n");
+        // console.log("\n\n", hbsObject.makeFriends, "\n\n")
+        // console.log("\n\n", res.json(data), "\n\n");
+        return res.json(data);
     });
 });
 

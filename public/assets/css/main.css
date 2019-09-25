@@ -1,0 +1,112 @@
+.bodySub {
+    height:fit-content;
+    /* background: lightslategray; */
+}
+
+.bufferTop {
+    height: 4em;
+}
+
+.headerPhoto {
+    height: 28em;
+    width: 28em;
+    object-fit: fill;
+    border-radius: 100em;
+    overflow: hidden;
+    margin: 0em 5em;
+    /* background: url("https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"); */
+}
+
+.bigPhoto {
+    height: 28em;
+    width: 38em;
+    object-fit: fill;
+    position: relative;
+    left: -4em;
+    /* border-radius: 100em; */
+    /* background: url("https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"); */
+}
+
+.findFriend {
+    height: 3.5em;
+    width: 10em;
+    border-radius: 3em;
+    background: whitesmoke;
+    color: orange;
+    position: relative;
+    left: 30em;
+    margin: 2em;
+}
+
+.buttonLine {
+    height: 7em;
+    width: 100%;
+    background: white;
+    margin-top: 2em;
+    /* position: relative; */
+    /* left: 25em; */
+    transition: 3s;
+
+}
+
+.buttonLine:before {
+    height: 7em;
+    width: 100%;
+    background: white;
+    transition: 3s;
+    /* margin-top: 2em; */
+    /* position: relative;
+    left: 25em; */
+    transition: 3s;
+
+}
+.buttonLine::before:hover {
+    background: linear-gradient(to right, white, orange, white);
+    transition: 3s;
+}
+.buttonText {
+    text-align: center;
+    padding: .9em;
+}
+
+
+.diagonalBox{
+    /* background: rgb(183, 40, 80);      primary */
+    /* background: rgb(40, 183, 143); */      /* Secondary */
+    /* background:linear-gradient(145deg,rgb(124, 226, 198),rgb(40, 183, 143), rgb(40, 183, 143)); */
+background: rgb(255, 173, 72);
+    width: 100%;
+    position:relative;
+    top: 35em;
+}
+
+/* To Achieve what I wanted, only needed :before not also :after */
+.diagonalBox:before{
+    content:"";
+    position:absolute;
+    /* background:linear-gradient(165deg, rgb(40, 183, 143) 30%,  rgb(124, 226, 198)); */
+    background: rgb(255, 173, 72);
+
+    top: -21em;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width:100%;
+    transform: skewY(12deg);
+    transform-origin: top left;
+    }
+
+
+.footer {
+    margin: 11em 0em 3em 1em;
+}
+
+
+
+
+
+
+/* ================================= */
+h6 {
+    font-size: 1.2em;
+}
